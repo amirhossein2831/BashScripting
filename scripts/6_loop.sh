@@ -18,3 +18,8 @@ until [ $counter -gt 5 ]; do
     echo "Counter: $counter"
     ((counter++))
 done
+
+for i in $(ls); do
+    echo i
+done
+

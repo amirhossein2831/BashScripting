@@ -24,8 +24,8 @@ fruit="apple"
 case $fruit in
     "apple")
         echo "Apple pie";;
-    "banana")
-        echo "Banana smoothie";;
+    "banana"|"orange")
+        echo "Banana or orange smoothie";;
     *)
         echo "Unknown fruit";;
 esac
@@ -37,3 +37,4 @@ esac
 # -le: less than or equal
 # -gt: greater than
 # -ge: greater than or equal
+# note that a white space should be after [ and before ] in if condition

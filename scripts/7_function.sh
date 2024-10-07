@@ -16,3 +16,15 @@ greet "Bob"
 location=$(pwd)
 
 echo "the location of this file is: $location"
+
+#  you can pass args and use them like $1 $2 and also return value and use them like $1 $2 ...
+
+function Hello(){
+    echo $1
+    return 1
+}
+
+Hello amir
+echo $?
+
+# $? is the result of last function call
